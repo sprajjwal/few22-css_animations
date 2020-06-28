@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <div class="row">
+            <div class="box"><button class="h1">Hello</button></div>
+            <div class="box"><button class="h2">Hello</button></div>
+            <div class="box"><button class="h3">Hello</button></div>
+        </div>
+
+        <div class="row">
+            <div class="m">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="m">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="m">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .row {
+                width: 80vw;
+                padding: 20px;
+                display: flex;
+                justify-content: space-around;
+            }
+            .hello {
+                display: flex;
+                flex-direction: row;
+                align-items:space-around;
+                width: 80vw;
+            }
+            button {
+                height: 60px;
+                width: 90px;
+                font-size: 20px;
+            }
+            .h1 {
+                background-color: rgb(19, 40, 224);
+                color: white;
+                border: none;
+                border-radius: 10%; 
+            }
+            .h1:hover {
+                color: rgb(19, 40, 224);
+                border: 1px solid rgb(19, 40, 224);
+                background-color: white;
+                transition: 300ms;
+            }
+            .h2 {
+               border: none;
+               color: rgb(19, 40, 224);
+               background-color: white; 
+            }
+            .h2:hover {
+                border-top: 3px solid rgb(19, 40, 224);
+                border-bottom: 3px solid rgb(19, 40, 224);
+                transition: 300ms;
+                transform: scale(1.2, 1);
+                letter-spacing: 0.5px;
+            }
+            .h3 {
+                border: 1px solid rgb(19, 40, 224);
+                border-radius: 10%;
+                background-color: white;
+            }
+            .h3:hover {
+                transition: 300ms;
+                transform: scale(0.9);
+                border: none;
+                background-color: rgb(19, 40, 224);
+                color: white;
+            }
+            .m {
+                height: 100px;
+                width: 100px;
+                border: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .m > div {
+                width: 70px;
+                height: 10px;
+                background-color: black;
+                margin: 5px;
+                transition: 300ms;
+            }
+            .m:first-child:hover {
+                background-color: black;
+            }
+
+            .m:first-child:hover > div:first-child {
+                transform: translate(0, 20px) rotate(45deg);
+                background-color: white;
+            }
+
+            .m:first-child:hover > div:last-child {
+                transform: translate(0px, -20px) rotate(-45deg);
+                background-color: white;
+            }
+
+            .m:nth-child(2):hover {
+                background-color: black;
+            }
+
+            .m:nth-child(2):hover > div:first-child {
+                width: 50px;
+                height: 9px;
+                transform: translate(-15px, 0px) rotate(-45deg);
+                background-color: white;
+            }
+
+            .m:nth-child(2):hover > div:nth-child(2) {
+
+                background-color: white;
+            }
+
+            .m:nth-child(2):hover > div:last-child {
+                width: 50px;
+                height: 9px;
+                transform: translate(-15px, 0px) rotate(45deg);
+                background-color: white;
+            }
+            
+            .m:last-child:hover {
+                background-color: black;
+            }
+
+            .m:last-child:hover > div:first-child {
+                transform: translate(10px, 45px) rotate(45deg);
+                background-color: white;
+            }
+
+            .m:last-child:hover > div:nth-child(2) {
+                height: 60px;
+                width: 60px;
+                border: 5px solid white;
+                border-radius: 50%;
+                transform: translate( 0px, 0px);
+                background-color: transparent;
+                
+            }
+
+            .m:last-child:hover > div:last-child {
+                transform: translate(10px, 0px) rotate(-45deg);
+                background-color: white;
+            }
+        </style>
+    </body>
+</html>
