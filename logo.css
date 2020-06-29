@@ -1,116 +1,129 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
+
 .container {
-    height: 200px;
-    width: 200px;
-    border: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+  height: 200px;
+  width: 200px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
 }
 
 .container:hover {
-    background-color: rgb(113, 113, 206);
+  background-color: #7171ce;
 }
 
 .container:hover > .hat {
-    background-color: rgb(113, 113, 206);
+  background-color: #7171ce;
 }
 
 .container:hover .mouth {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
 }
 
 .face {
-    height: 250px;
-    width: 100px;
-    border-radius: 50% 50% 80% 80%;
-    background-color: rgb(231, 209, 85);
-    border-bottom: 3px solid gray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
+  height: 250px;
+  width: 100px;
+  border-radius: 50% 50% 80% 80%;
+  background-color: #e7d155;
+  border-bottom: 3px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
 }
+
 .hat {
-    height: 200px;
-    width: 100px;
-    border-radius: 25% 25% 0 0;
-    background-color: black;
-    position: relative;
-    bottom: -10px;
+  height: 200px;
+  width: 100px;
+  border-radius: 25% 25% 0 0;
+  background-color: black;
+  position: relative;
+  bottom: -10px;
 }
+
 .eyes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width:100px;
-    height: 25px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100px;
+  height: 25px;
+  margin-top: 20px;
 }
+
 .eye {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .eyeball {
-    height: 6px;
-    width: 6px;
-    border-radius: 50%;
-    background-color: white;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: white;
 }
+
 .mouth {
-    width: 50px;
-    height: 10px;
-    background-color: rgb(173, 36, 59);
-    border-radius: 40%;
+  width: 50px;
+  height: 10px;
+  background-color: #ad243b;
+  border-radius: 40%;
 }
+
 .neck {
-    position: relative;
-    top: -5px;
-    z-index: 0;
-    height: 30px;
-    width: 55px;
-    background-color: rgb(245, 201, 143);
+  position: relative;
+  top: -5px;
+  z-index: 0;
+  height: 30px;
+  width: 55px;
+  background-color: #f5c98f;
 }
+
 .shirt {
-    height: 200px;
-    width: 160px;
-    background-color: black;
-    border-radius: 35% 35% 0 0;
-    position: relative;
-    top: -5px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
+  height: 200px;
+  width: 160px;
+  background-color: black;
+  border-radius: 35% 35% 0 0;
+  position: relative;
+  top: -5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
+
 .shirt-left {
-    width: 75px;
-    height: 200px;
-    background-color: red;
-    border-right: 4px solid gold;
+  width: 75px;
+  height: 200px;
+  background-color: red;
+  border-right: 4px solid gold;
 }
+
 .shirt-right {
-    width: 75px;
-    height: 200px;
-    background-color: red;
+  width: 75px;
+  height: 200px;
+  background-color: red;
 }
+
 .buttons {
-    width: 2px;
-    height: 200px;
-    border-left: 8px dotted gold;
-    position: relative;
-    top: 2px;
+  width: 2px;
+  height: 200px;
+  border-left: 8px dotted gold;
+  position: relative;
+  top: 2px;
 }
+
+/*# sourceMappingURL=logo.css.map */
